@@ -6,5 +6,25 @@
       "node_modules/**/*.ts",
       "coverage/lcov-report/*.js"
     ]
+  },
+  "rules": {
+    "no-console": [
+      false
+    ],
+    "ordered-imports": [
+      false
+    ],
+    "object-literal-sort-keys": false,
+    "member-ordering": [
+      true
+    ],
+    "strict-boolean-expressions": [
+      false
+    ],
+    "jsx-boolean-value": false,
+    "interface-name": false
+  },
+  "jsRules": {
+    "no-console": false
   }
 }
