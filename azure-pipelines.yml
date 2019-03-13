@@ -21,11 +21,11 @@ jobs:
   - script: |
       yarn -v
   - script: |
-      npm install
-    displayName: 'npm install'
+      yarn install
+    displayName: 'yarn'
   - script: |
-      npm build
+      yarn build
     displayName: 'exec build'
   - script: |
-      npm run package:windows
+      yarn package:windows
     displayName: 'create windows installer'
