@@ -24,3 +24,5 @@ jobs:
     displayName: 'Windowsインストーラー作成'
   - script: |
       ls ./dist -a
+  - script: |
+      yarn deploy
