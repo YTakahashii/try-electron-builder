@@ -125,7 +125,7 @@ const deleteContainer = async containerName => {
 
 const execute = async () => {
   const containerName = 'installer'
-  const localFilePath = './dist/try-electron-builder-0.1.0.dmg'
+  const localFilePath = './dist/try-electron-builder 0.1.0.msi'
   let response
 
   console.log('Containers:')
