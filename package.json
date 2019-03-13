@@ -56,13 +56,11 @@
       ]
     },
     "mac": {
-      "icon": "./icon/favicon.icns",
       "target": [
         "dmg"
       ]
     },
     "win": {
-      "icon": "./icon/favicon.ico",
       "target": "msi"
     }
   }
