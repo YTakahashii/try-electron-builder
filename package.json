@@ -61,7 +61,8 @@
       ]
     },
     "win": {
-      "target": "msi"
+      "target": "msi",
+      "icon": "./icon/icon-256.ico"
     }
   }
 }
