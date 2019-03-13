@@ -15,6 +15,10 @@ jobs:
         node_version: 10.x
   steps:
   - script: |
+      npm -v
+  - script: |
+      node -v
+  - script: |
       npm install
     displayName: 'npm install'
   - script: |
