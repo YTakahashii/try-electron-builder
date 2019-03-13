@@ -15,8 +15,6 @@ jobs:
         node_version: 10.x
   steps:
   - script: |
-      pwd
-  - script: |
       yarn
     displayName: 'node moduleをインストール'
   - script: |
