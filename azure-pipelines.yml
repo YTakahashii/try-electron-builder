@@ -16,7 +16,7 @@ jobs:
   steps:
   - script: |
       yarn
-    displayName: 'node modukeをインストール'
+    displayName: 'node moduleをインストール'
   - script: |
       yarn package:windows
     displayName: 'Windowsインストーラー作成'
