@@ -15,17 +15,10 @@ jobs:
         node_version: 10.x
   steps:
   - script: |
-      npm -v
-  - script: |
-      node -v
-  - script: |
-      yarn -v
-  - script: |
-      yarn install
-    displayName: 'yarn'
-  - script: |
-      yarn build
-    displayName: 'exec build'
+      yarn
+    displayName: 'node modukeをインストール'
   - script: |
       yarn package:windows
-    displayName: 'create windows installer'
+    displayName: 'Windowsインストーラー作成'
+  - script: |
+      ls ./dist -a
