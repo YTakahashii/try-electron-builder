@@ -23,7 +23,7 @@ jobs:
   - task: ArchiveFiles@2
     displayName: 'インストーラーをZipに圧縮'
     inputs:
-      rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist/*.msi'
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)\dist\**\*.msi'
       includeRootFolder: false
       replaceExistingArchive: true
   - task: PublishBuildArtifacts@1
