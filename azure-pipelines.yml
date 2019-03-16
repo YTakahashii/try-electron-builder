@@ -28,3 +28,14 @@ jobs:
       replaceExistingArchive: true
   - task: PublishBuildArtifacts@1
     displayName: 'Publish artifacts: drop'
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+    inputs:
+      Contents: |
+        $(System.DefaultWorkingDirectory)/deploy.js
+      TargetFolder: $(Build.ArtifactStagingDirectory)/deploy
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish artifacts: deploy.js'
+    inputs:
+      pathtoPublish: $(Build.ArtifactStagingDirectory)/deploy
+      artifactName: deploy
