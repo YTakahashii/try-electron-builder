@@ -20,13 +20,11 @@ jobs:
   - script: |
       yarn package:windows
     displayName: 'Windowsインストーラー作成'
-  - script: |
-      echo $(System.DefaultWorkingDirectory)
   - task: ArchiveFiles@2
-    displayName: 'Archive files'
+    displayName: 'インストーラーをZipに圧縮'
     inputs:
-      rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist'
+      rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist/*.msi'
       includeRootFolder: false
-
+      replaceExistingArchive: true
   - task: PublishBuildArtifacts@1
     displayName: 'Publish artifacts: drop'
